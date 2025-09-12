@@ -1,7 +1,6 @@
 -- Check For Nulls or Duplicates in Primary Key
 -- Expectation: No Result
 
---crm_cust_info
 SELECT
 cst_id,
 COUNT(*)
@@ -13,7 +12,6 @@ HAVING COUNT(*) > 1 OR cst_id IS NULL
 --Check for unwanted spaces
 -- Expectation: No Result
 
---crm_cust_info
 SELECT 
 cst_firstname
 FROM bronze.crm_cust_info
